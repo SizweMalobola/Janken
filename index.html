@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>rock_paper_scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Man VS Machine</h1>
+        <p>In A Game Of Epic Rock Paper Scissors</p>
+      </div>
+      <div id="main-game">
+        <div id="player-options">
+          <button id="rock" class="select">
+            <i class="fa fa-hand-rock" aria-hidden="true"></i>
+          </button>
+          <button id="paper" class="select">
+            <i class="fa fa-hand-paper" aria-hidden="true"></i>
+          </button>
+          <button id="scissors" class="select">
+            <i class="fa fa-hand-scissors" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div id="game-details">
+          <div id="score-div">
+            <div class="score">
+              <h3>MAN</h3>
+              <span id="man-score">0</span>
+            </div>
+            <div class="score">
+              <h3>MACHINE</h3>
+              <span id="machine-score">0</span>
+            </div>
+          </div>
+          <div class="winner">Best out of 5</div>
+        </div>
+      </div>
+      <button id="retry">
+        <i class="fa fa-circle-notch" aria-hidden="true"></i> Retry
+      </button>
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>
